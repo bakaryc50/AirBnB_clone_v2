@@ -17,8 +17,8 @@ class BaseModel:
         updated_at (sqlalchemy Datetime): the datetime of the last update
     """
     id = Column(String(60), nullable=False, primary_key=True, unique=True)
-    created_at = Column(Datetime, nullable=False, default=datetime.utcnow())
-    updated_at = Column(Datetime, nullable=False, default=datetime.utcnow())
+    created_at = Column(DATETIME, nullable=False, default=datetime.utcnow())
+    updated_at = Column(DATETIME, nullable=False, default=datetime.utcnow())
 
     def __init__(self, *args, **kwargs):
         """Instatntiates a new model"""
