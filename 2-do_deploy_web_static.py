@@ -10,6 +10,7 @@ from fabric.api import local, env, put, run
 
 env.hosts = ["34.139.62.54", "34.74.103.174"]
 
+
 def do_pack():
     """ Archive the contents of web_static before sending
     """
@@ -23,6 +24,7 @@ def do_pack():
         return tgz
     else:
         None
+
 
 def do_deploy(archive_path):
     """ Deploy an archive to my web servers
