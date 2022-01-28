@@ -8,7 +8,7 @@ from time import strftime
 from fabric.api import local, env, put, run
 
 
-env.hosts = ["34.139.62.54", "34.74.103.174"]
+env.hosts = ["3.238.248.152", "3.236.20.69"]
 
 
 def do_pack():
