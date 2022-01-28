@@ -8,7 +8,7 @@ from shlex import quote
 from time import strftime
 from fabric.api import env, local, put, run
 
-env.hosts = ['35.196.167.155', '34.73.252.236']
+env.hosts = ["3.238.248.152", "3.236.20.69"]
 
 
 def do_pack():
