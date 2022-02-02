@@ -48,6 +48,7 @@ def is_it_a_number(n):
     """
     return "{} is a number".format(n)
 
+
 @app.route("/number_template/<int:n>", strict_slashes=False)
 def number_template(n):
     """
