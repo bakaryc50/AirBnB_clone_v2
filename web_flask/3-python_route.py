@@ -31,15 +31,14 @@ def c_is_fun(text):
     return "C {}".format(text.replace("_", " "))
 
 
-@app.route("/python/(<text>)", strict_slashes=False)
+@app.route("python/", strict_slashes=False)
+@app.route("/python/<text>", strict_slashes=False)
 def python_is_cool(text="is cool"):
     """
     print the value of text variable, or the default value
         @text: variable
     """
-    if text:
-        return "Python {}".format(text.replace("_", " "))
-    return "Python {}".format(text)
+    return "Python {}".format(text.replace("_", " "))
 
 
 if __name__ == "__main__":
