@@ -29,4 +29,4 @@ class State(BaseModel):
             """
             obj_cities = models.storage.all(models.city.City)
             return [city for city in obj_cities.values()
-                    if city.stated_id == self.id]
+                    if city.state_id == self.id]
